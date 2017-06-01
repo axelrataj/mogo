@@ -2,6 +2,7 @@
   padding: 90px 0 0 0;
   .box {
     position: relative;
+    cursor: pointer;
     &:after {
       @include positionAbsolute();
       content: '';
@@ -13,7 +14,6 @@
     .hover {
       @include positionAbsolute();
       text-align: center;
-      cursor: pointer;
       .bg {
         @include positionAbsolute();
         @include generateGradient(#f38181, #fce38a, top, bottom);

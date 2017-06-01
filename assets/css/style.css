@@ -1669,7 +1669,8 @@ ul {
 .about-section {
   padding: 90px 0 0 0; }
   .about-section .box {
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .about-section .box:after {
       position: absolute;
       top: 0;
@@ -1692,8 +1693,7 @@ ul {
       left: 0;
       margin: auto;
       z-index: 5;
-      text-align: center;
-      cursor: pointer; }
+      text-align: center; }
       .about-section .box .hover .bg {
         position: absolute;
         top: 0;
