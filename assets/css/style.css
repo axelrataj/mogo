@@ -1669,8 +1669,8 @@ ul {
 .about-section {
   padding: 90px 0 0 0; }
   .about-section .box {
-    position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .about-section .box .eye {
       position: absolute;
       top: 5px;

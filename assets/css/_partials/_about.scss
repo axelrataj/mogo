@@ -1,8 +1,8 @@
 .about-section {
   padding: 90px 0 0 0;
   .box {
-    position: relative;
     cursor: pointer;
+    position: relative;
     .eye {
       @include positionAbsolute(5px, 5px, auto, auto);
       max-width: 25px;
