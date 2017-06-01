@@ -1710,9 +1710,7 @@ ul {
         z-index: -1;
         -webkit-transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
                 transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
-        -webkit-transform: translateX(-15px) translateY(-15px);
-            -ms-transform: translateX(-15px) translateY(-15px);
-                transform: translateX(-15px) translateY(-15px); }
+        /*transform: translateX(-15px) translateY(-15px);*/ }
       .about-section .box .hover img {
         opacity: 0;
         -webkit-transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
@@ -1741,9 +1739,7 @@ ul {
       text-align: center; }
       .about-section .box:hover .hover .bg {
         opacity: 0.9;
-        -webkit-transform: translateX(0) translateY(0);
-            -ms-transform: translateX(0) translateY(0);
-                transform: translateX(0) translateY(0); }
+        /*transform: translateX(0) translateY(0);*/ }
       .about-section .box:hover .hover p, .about-section .box:hover .hover img {
         opacity: 1;
         -webkit-transform: translateY(0px);
