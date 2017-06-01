@@ -1,0 +1,40 @@
+.header-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+ .logo {
+   float: left;
+   color: #fff;
+   margin: 3px 0;
+   font: {
+     size: 30px;
+     weight: 700;
+   }
+ }
+}
+
+.nav-main-container {
+  float: right;
+  nav {
+    ul {
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        &:last-child {
+          a {
+            padding: 10px 0 10px 30px;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 10px 30px;
+          display: block;
+        }
+      }
+    }
+  }
+}
