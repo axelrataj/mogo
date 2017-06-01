@@ -1,0 +1,18 @@
+.devices-section {
+  position: relative;
+  background: {
+    image: url("/assets/gfx/devices-section/bg.jpg");
+    position: center top;
+    repeat: no-repeat;
+  };
+  height: 850px;
+  img {
+    @include positionAbsolute($t: auto);
+    &.ipad {
+      max-width: 475px;
+    }
+    &.iphone {
+      max-width: 205px;
+    }
+  }
+}

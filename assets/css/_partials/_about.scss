@@ -13,6 +13,7 @@
     .hover {
       @include positionAbsolute();
       text-align: center;
+      cursor: pointer;
       .bg {
         @include positionAbsolute();
         @include generateGradient(#f38181, #fce38a, top, bottom);
