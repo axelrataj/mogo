@@ -7,7 +7,6 @@
     <title></title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 
     <!-- JS -->
