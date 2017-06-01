@@ -137,7 +137,7 @@
     </section>
 
     <script>
-        (function() {
+        (function($) {
 
             var counter = $('.about-section .counters ul li');
 
@@ -155,29 +155,8 @@
 
             });
 
-            /*counter.each(function (i, e) {
 
-                var countContainer = $($(e).find('strong')),
-                    endCount = countContainer.attr('data-end-count');
-
-
-                setTimeout(function () {
-                for(var i = 0; i < endCount; i++ ) {
-
-
-                    countContainer.html(i);
-
-                }
-
-
-                }, 800);
-               /!*
-
-                console.log(endCount);*!/
-
-            });*/
-
-        })();
+        })(jQuery);
     </script>
 
     <section class="services-section section">
