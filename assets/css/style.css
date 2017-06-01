@@ -1672,6 +1672,8 @@ ul {
     cursor: pointer;
     position: relative; }
     .about-section .box .eye {
+      -webkit-transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+              transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
       position: absolute;
       top: 5px;
       right: 5px;
@@ -1703,6 +1705,8 @@ ul {
       margin: auto;
       z-index: 5;
       text-align: center; }
+      .about-section .box .hover .eye {
+        opacity: 0; }
       .about-section .box .hover .bg {
         position: absolute;
         top: 0;
