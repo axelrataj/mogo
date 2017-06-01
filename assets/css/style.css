@@ -1671,6 +1671,15 @@ ul {
   .about-section .box {
     position: relative;
     cursor: pointer; }
+    .about-section .box .eye {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      bottom: auto;
+      left: auto;
+      margin: auto;
+      z-index: 5;
+      max-width: 25px; }
     .about-section .box:after {
       position: absolute;
       top: 0;
@@ -1711,7 +1720,7 @@ ul {
         -webkit-transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
                 transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
         /*transform: translateX(-15px) translateY(-15px);*/ }
-      .about-section .box .hover img {
+      .about-section .box .hover .display-table img {
         opacity: 0;
         -webkit-transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
                 transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
@@ -1740,7 +1749,7 @@ ul {
       .about-section .box:hover .hover .bg {
         opacity: 0.9;
         /*transform: translateX(0) translateY(0);*/ }
-      .about-section .box:hover .hover p, .about-section .box:hover .hover img {
+      .about-section .box:hover .hover p, .about-section .box:hover .hover .display-table img {
         opacity: 1;
         -webkit-transform: translateY(0px);
             -ms-transform: translateY(0px);
