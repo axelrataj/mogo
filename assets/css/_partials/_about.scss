@@ -19,9 +19,6 @@
     .hover {
       @include positionAbsolute();
       text-align: center;
-      .eye {
-        opacity: 0;
-      }
       .bg {
         @include positionAbsolute();
         @include generateGradient(#f38181, #fce38a, top, bottom);
@@ -51,6 +48,9 @@
       }
     }
     &:hover {
+      .eye {
+        opacity: 0;
+      }
       &:after {
         transform: translateX(15px) translateY(15px);
         opacity: 1;
