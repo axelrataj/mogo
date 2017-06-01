@@ -1789,7 +1789,7 @@ ul {
     .about-section .box {
       max-width: 380px;
       margin: auto; }
-      .about-section .box .hover:hover:after {
+      .about-section .box:hover:after {
         -webkit-transform: translateX(5px) translateY(5px);
             -ms-transform: translateX(5px) translateY(5px);
                 transform: translateX(5px) translateY(5px); }
