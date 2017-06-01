@@ -7,10 +7,10 @@
     <title></title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
 
     <!-- JS -->
-    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&amp;subset=latin-ext" rel="stylesheet">
@@ -31,7 +31,7 @@
                         <li><a href="">Work</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href=""><img src="assets/gfx/header/icons/search.png" alt=""></a></li>
+                        <li><a href=""><img src="/assets/gfx/header/icons/search.png" alt=""></a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,7 +40,7 @@
     </header>
 
     <section class="slider-section">
-        <img src="assets/gfx/banner-section/banner.jpg" class="img-responsive" alt="">
+        <img src="/assets/gfx/banner-section/banner.jpg" class="img-responsive" alt="">
     </section>
 
     <section class="about-section section">
@@ -62,12 +62,12 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/about/img-1.jpg" class="img-responsive" alt="">
+                        <img src="/assets/gfx/about/img-1.jpg" class="img-responsive" alt="">
                         <div class="hover">
                             <div class="bg"></div>
                             <div class="display-table">
                                 <div class="display-table-cell">
-                                    <img src="assets/gfx/about/icons/user.png" alt="">
+                                    <img src="/assets/gfx/about/icons/user.png" alt="">
                                     <p>Super Team</p>
                                 </div>
                             </div>
@@ -76,12 +76,12 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/about/img-2.jpg" class="img-responsive" alt="">
+                        <img src="/assets/gfx/about/img-2.jpg" class="img-responsive" alt="">
                         <div class="hover">
                             <div class="bg"></div>
                             <div class="display-table">
                                 <div class="display-table-cell">
-                                    <img src="assets/gfx/about/icons/user.png" alt="">
+                                    <img src="/assets/gfx/about/icons/user.png" alt="">
                                     <p>Super Team</p>
                                 </div>
                             </div>
@@ -90,12 +90,12 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/about/img-3.jpg" class="img-responsive" alt="">
+                        <img src="/assets/gfx/about/img-3.jpg" class="img-responsive" alt="">
                         <div class="hover">
                             <div class="bg"></div>
                             <div class="display-table">
                                 <div class="display-table-cell">
-                                    <img src="assets/gfx/about/icons/user.png" alt="">
+                                    <img src="/assets/gfx/about/icons/user.png" alt="">
                                     <p>Super Team</p>
                                 </div>
                             </div>
@@ -193,7 +193,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/services-section/icons/photography.png" alt="">
+                        <img src="/assets/gfx/services-section/icons/photography.png" alt="">
                         <p>
                             <strong>Photography</strong>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -202,7 +202,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/services-section/icons/web-design.png" alt="">
+                        <img src="/assets/gfx/services-section/icons/web-design.png" alt="">
                         <p>
                             <strong>Web design</strong>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -211,7 +211,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/services-section/icons/creativity.png" alt="">
+                        <img src="/assets/gfx/services-section/icons/creativity.png" alt="">
                         <p>
                             <strong>Creativity</strong>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -221,7 +221,7 @@
                 <div class="clearfix hidden-xs"></div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/services-section/icons/seo.png" alt="">
+                        <img src="/assets/gfx/services-section/icons/seo.png" alt="">
                         <p>
                             <strong>seo</strong>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -230,7 +230,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/services-section/icons/css-html.png" alt="">
+                        <img src="/assets/gfx/services-section/icons/css-html.png" alt="">
                         <p>
                             <strong>css/html</strong>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -239,7 +239,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <img src="assets/gfx/services-section/icons/digital.png" alt="">
+                        <img src="/assets/gfx/services-section/icons/digital.png" alt="">
                         <p>
                             <strong>Digital</strong>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
