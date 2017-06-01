@@ -1789,6 +1789,10 @@ ul {
     .about-section .box {
       max-width: 380px;
       margin: auto; }
+      .about-section .box .hover:hover:after {
+        -webkit-transform: translateX(5px) translateY(5px);
+            -ms-transform: translateX(5px) translateY(5px);
+                transform: translateX(5px) translateY(5px); }
     .about-section .row .col-sm-4 {
       margin: 0 0 15px 0; }
       .about-section .row .col-sm-4:last-child {

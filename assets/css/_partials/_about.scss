@@ -130,6 +130,13 @@
     .box {
       max-width: 380px;
       margin: auto;
+      .hover {
+        &:hover {
+          &:after {
+            transform: translateX(5px) translateY(5px);
+          }
+        }
+      }
     }
     .row {
       .col-sm-4 {
