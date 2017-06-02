@@ -371,22 +371,26 @@
     <script>
         (function() {
 
-            var el = $('.what-we-do-section .scroll-content .inner').jScrollPane();
+            $(document).ready(function () {
 
-            var header = $('.what-we-do-section li header');
+                var el = $('.what-we-do-section .scroll-content .inner').jScrollPane();
 
-            header.on('click', function () {
+                var header = $('.what-we-do-section li header');
 
-                var parent = $(this).parents('li'),
-                    api = parent.find('.scroll-content .inner').data('jsp');
+                header.on('click', function () {
 
-                if( !parent.hasClass('active') ) {
-                    $('.what-we-do-section li').removeClass('active');
-                    $('.what-we-do-section .scroll-content').slideUp(500);
-                    parent.addClass('active');
-                    parent.find('.scroll-content').slideDown(500);
-                    api.reinitialise();
-                }
+                    var parent = $(this).parents('li'),
+                        api = parent.find('.scroll-content .inner').data('jsp');
+
+                    if( !parent.hasClass('active') ) {
+                        $('.what-we-do-section li').removeClass('active');
+                        $('.what-we-do-section .scroll-content').slideUp(500);
+                        parent.addClass('active');
+                        parent.find('.scroll-content').slideDown(500);
+                        api.reinitialise();
+                    }
+
+                });
 
             });
 
