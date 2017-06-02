@@ -2042,8 +2042,8 @@ ul {
 
 @media (max-width: 767px) {
   .what-we-do-section .collapse-container {
-    max-width: 380px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 380px; }
   .what-we-do-section .info-container {
     height: auto; }
     .what-we-do-section .info-container .col-sm-6 {
