@@ -8,12 +8,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/bower_components/jScrollPane/style/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" href="assets/bower_components/owl.carousel/dist/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 
     <!-- JS -->
     <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="assets/bower_components/jScrollPane/script/jquery.mousewheel.js"></script>
     <script src="assets/bower_components/jScrollPane/script/jquery.jscrollpane.min.js"></script>
+    <script src="assets/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&amp;subset=latin-ext" rel="stylesheet">
@@ -391,6 +393,83 @@
                         //setTimeout(api.reinitialise(), 500);
                     }
 
+                });
+
+            });
+
+        })();
+    </script>
+
+    <section class="opinion-section section">
+        <div class="container">
+
+            <div class="opinion-slider owl-carousel">
+                <div class="item">
+                    <div class="img-container">
+                        <img src="assets/gfx/opinion-section/icons/message.png" alt="">
+                    </div>
+                    <div class="quote-container">
+                        <q>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </q>
+                        <div class="author">Jon Doe</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="assets/gfx/opinion-section/icons/message.png" alt="">
+                    </div>
+                    <div class="quote-container">
+                        <q>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </q>
+                        <div class="author">Jon Doe</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="assets/gfx/opinion-section/icons/message.png" alt="">
+                    </div>
+                    <div class="quote-container">
+                        <q>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </q>
+                        <div class="author">Jon Doe</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="assets/gfx/opinion-section/icons/message.png" alt="">
+                    </div>
+                    <div class="quote-container">
+                        <q>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </q>
+                        <div class="author">Jon Doe</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        (function() {
+
+            $(document).ready(function () {
+
+                $('.opinion-slider').owlCarousel({
+                    items: 1,
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    navText : ["<i class='arrow left'></i>","<i class='arrow right'></i>"],
                 });
 
             });

@@ -1,0 +1,80 @@
+.opinion-section {
+  background: #f8f8f8;
+  .opinion-slider {
+    .item {
+      padding: 0 6%;
+      .img-container {
+        display: inline-block;
+        vertical-align: middle;
+        width: 150px;
+        height: 150px;
+        border: 2px solid #95e1d3;
+        position: relative;
+        img {
+          width: auto;
+          @include positionAbsolute();
+        }
+      }
+      .quote-container {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 155px);
+        padding: 0 0 0 50px;
+      }
+      q {
+        color: #999;
+        line-height: 1.2em;
+        margin: 0 0 15px 0;
+        display: block;
+        font: {
+          family: $roboto;
+          style: italic;
+          weight: 300;
+          size: 24px;
+        };
+      }
+      .author {
+        position: relative;
+        color: #333;
+        padding: 0 0 0 70px;
+        font: {
+          family: $kaushan;
+          size: 24px;
+        };
+        &:before {
+          content: '';
+          @include positionAbsolute($r: auto);
+          width: 60px;
+          height: 4px;
+          background: #f38181;
+        }
+      }
+    }
+    .owl-prev {
+      @include positionAbsolute($r: auto);
+      width: 20px;
+      background: #f8f8f8;
+    }
+    .owl-next {
+      @include positionAbsolute($l: auto);
+      width: 20px;
+      background: #f8f8f8;
+    }
+    .arrow {
+      width: 16px;
+      height: 16px;
+      border-top: 4px solid #ccc;
+      display: block;
+      &.left {
+        border-left: 4px solid #ccc;
+        transform: rotate(-45deg);
+        @include positionAbsolute($r: auto);
+      }
+      &.right {
+        border-right: 4px solid #ccc;
+        transform: rotate(45deg);
+        @include positionAbsolute($l: auto);
+      }
+    }
+  }
+}
