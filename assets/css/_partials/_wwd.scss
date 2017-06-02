@@ -18,7 +18,7 @@
         margin: 0 0 10px ;
         &.active {
           .scroll-content {
-            display: block;
+            height: 165px;
           }
           header {
             border-color: #e5e5e5;
@@ -60,10 +60,9 @@
         border-radius: 3px
       }
       .scroll-content {
-        padding: 20px 20px 20px 20px;
-        display: none;
-        height: 165px;
+        height: 0;
         position: relative;
+        transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
         p {
           line-height: 1.2em;
           color: #999;

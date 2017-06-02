@@ -1965,7 +1965,7 @@ ul {
     border: 1px solid #e5e5e5;
     margin: 0 0 10px; }
     .what-we-do-section .info-container .collapse-container li.active .scroll-content {
-      display: block; }
+      height: 165px; }
     .what-we-do-section .info-container .collapse-container li.active header {
       border-color: #e5e5e5; }
     .what-we-do-section .info-container .collapse-container li.active .arrow {
@@ -2006,10 +2006,10 @@ ul {
             transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
     border-radius: 3px; }
   .what-we-do-section .info-container .collapse-container .scroll-content {
-    padding: 20px 20px 20px 20px;
-    display: none;
-    height: 165px;
-    position: relative; }
+    height: 0;
+    position: relative;
+    -webkit-transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+            transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1); }
     .what-we-do-section .info-container .collapse-container .scroll-content p {
       line-height: 1.2em;
       color: #999;
