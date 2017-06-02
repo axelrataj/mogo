@@ -1945,7 +1945,8 @@ ul {
     .devices-section .iphone {
       bottom: -9vw;
       left: auto;
-      width: 33%;
-      max-width: none; }
+      width: 26%;
+      max-width: none;
+      right: 7vw; }
     .devices-section .visible-xs {
       max-width: 100%; } }
