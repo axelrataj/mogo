@@ -7,10 +7,13 @@
     <title></title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="assets/bower_components/jScrollPane/style/jquery.jscrollpane.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 
     <!-- JS -->
     <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bower_components/jScrollPane/script/jquery.mousewheel.js"></script>
+    <script src="assets/bower_components/jScrollPane/script/jquery.jscrollpane.min.js"></script>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&amp;subset=latin-ext" rel="stylesheet">
@@ -275,8 +278,120 @@
                 </p>
             </header>
 
+            <div class="row info-container">
+                <div class="col-sm-6 hidden-xs img-container" style="background-image: url('assets/gfx/what-we-do/img-1.jpg')"></div>
+                <div class="col-sm-6">
+
+                    <div class="collapse-container">
+                        <ul>
+                            <li class="active">
+                                <header>
+                                    <img src="assets/gfx/services-section/icons/photography.png" alt="">
+                                    <strong>PHOTOGRAPHY</strong>
+                                    <div class="arrow"></div>
+                                </header>
+                                <div class="scroll-content">
+                                    <div class="inner">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                            mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                    <div class="scroll">
+                                        <div class="trigger"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <header>
+                                    <img src="assets/gfx/services-section/icons/creativity.png" alt="">
+                                    <strong>CREATIVITY</strong>
+                                    <div class="arrow"></div>
+                                </header>
+                                <div class="scroll-content">
+                                    <div class="inner">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                            mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <header>
+                                    <img src="assets/gfx/services-section/icons/web-design.png" alt="">
+                                    <strong>WEB DESIGN</strong>
+                                    <div class="arrow"></div>
+                                </header>
+                                <div class="scroll-content">
+                                    <div class="inner">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                            mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <script>
+        (function() {
+
+            var el = $('.what-we-do-section .scroll-content .inner').jScrollPane();
+
+            var header = $('.what-we-do-section li header');
+
+            header.on('click', function () {
+
+                var parent = $(this).parents('li'),
+                    api = parent.find('.scroll-content .inner').data('jsp');
+
+                if( !parent.hasClass('active') ) {
+                    $('.what-we-do-section li').removeClass('active');
+                    $('.what-we-do-section .scroll-content').slideUp(500);
+                    parent.addClass('active');
+                    parent.find('.scroll-content').slideDown(500);
+                    api.reinitialise();
+                }
+
+            });
+
+        })();
+    </script>
 
 </body>
 </html>

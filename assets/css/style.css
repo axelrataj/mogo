@@ -1952,3 +1952,95 @@ ul {
       right: 7vw; }
     .devices-section .visible-xs {
       max-width: 100%; } }
+.what-we-do-section .info-container {
+  height: 375px;
+  overflow: hidden; }
+  .what-we-do-section .info-container .col-sm-6 {
+    height: 100%; }
+  .what-we-do-section .info-container .img-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .what-we-do-section .info-container .collapse-container li {
+    border: 1px solid #e5e5e5;
+    margin: 0 0 10px; }
+    .what-we-do-section .info-container .collapse-container li.active .scroll-content {
+      display: block; }
+    .what-we-do-section .info-container .collapse-container li.active header {
+      border-color: #e5e5e5; }
+    .what-we-do-section .info-container .collapse-container li.active .arrow {
+      -webkit-transform: rotate(225deg);
+          -ms-transform: rotate(225deg);
+              transform: rotate(225deg);
+      top: 8px; }
+    .what-we-do-section .info-container .collapse-container li:last-child {
+      margin: 0; }
+  .what-we-do-section .info-container .collapse-container img {
+    display: inline-block;
+    margin: 0 15px 0 0; }
+  .what-we-do-section .info-container .collapse-container header {
+    border-bottom: 1px solid transparent;
+    padding: 15px;
+    position: relative;
+    cursor: pointer; }
+  .what-we-do-section .info-container .collapse-container strong {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700; }
+  .what-we-do-section .info-container .collapse-container .arrow {
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    z-index: 5;
+    width: 16px;
+    height: 16px;
+    border-right: 3px solid #e5e5e5;
+    border-bottom: 3px solid #e5e5e5;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+            transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+    border-radius: 3px; }
+  .what-we-do-section .info-container .collapse-container .scroll-content {
+    padding: 20px 20px 20px 20px;
+    display: none;
+    height: 165px;
+    position: relative; }
+    .what-we-do-section .info-container .collapse-container .scroll-content p {
+      line-height: 1.2em;
+      color: #999;
+      margin: 0;
+      padding: 0 20px 0 0;
+      font-family: "Roboto", sans-serif;
+      font-style: italic; }
+    .what-we-do-section .info-container .collapse-container .scroll-content .inner {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      left: 20px;
+      margin: auto;
+      z-index: 5;
+      overflow-y: scroll; }
+    .what-we-do-section .info-container .collapse-container .scroll-content .jspDrag {
+      width: 5px;
+      background: #95e1d3;
+      border-radius: 3px; }
+    .what-we-do-section .info-container .collapse-container .scroll-content .jspTrack {
+      width: 5px;
+      background: #f5f5f5;
+      border-radius: 3px; }
+    .what-we-do-section .info-container .collapse-container .scroll-content .jspVerticalBar {
+      width: 5px;
+      background: #f5f5f5;
+      border-radius: 3px; }
+
+@media (max-width: 767px) {
+  .what-we-do-section .info-container {
+    height: auto; }
+    .what-we-do-section .info-container .col-sm-6 {
+      height: auto; } }
