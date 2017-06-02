@@ -62,7 +62,7 @@
       .scroll-content {
         height: 0;
         position: relative;
-        transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+        transition: 0.5s linear 0s;
         p {
           line-height: 1.2em;
           color: #999;
