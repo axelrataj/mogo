@@ -100,6 +100,10 @@
 @media(max-width: 767px) {
 
   .what-we-do-section {
+    .collapse-container {
+      max-width: 380px;
+      margin: 0 auto;
+    }
     .info-container {
       height: auto;
       .col-sm-6 {

@@ -1638,7 +1638,8 @@ ul {
     padding: 50px 0; }
 
   .header-section p {
-    margin: 0 auto 50px; } }
+    margin: 0 auto 50px;
+    max-width: 380px; } }
 .header-main {
   position: absolute;
   top: 0;
@@ -2040,6 +2041,9 @@ ul {
       border-radius: 3px; }
 
 @media (max-width: 767px) {
+  .what-we-do-section .collapse-container {
+    max-width: 380px;
+    margin: 0 auto; }
   .what-we-do-section .info-container {
     height: auto; }
     .what-we-do-section .info-container .col-sm-6 {
