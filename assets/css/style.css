@@ -1937,7 +1937,8 @@ ul {
 
 @media (max-width: 767px) {
   .devices-section {
-    height: auto; }
+    height: auto;
+    background-position: center; }
     .devices-section .ipad-container {
       width: 60%; }
       .devices-section .ipad-container > div {
