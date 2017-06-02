@@ -2008,8 +2008,8 @@ ul {
   .what-we-do-section .info-container .collapse-container .scroll-content {
     height: 0;
     position: relative;
-    -webkit-transition: 0.5s linear 0s;
-            transition: 0.5s linear 0s; }
+    -webkit-transition: 0.3s linear 0s;
+            transition: 0.3s linear 0s; }
     .what-we-do-section .info-container .collapse-container .scroll-content p {
       line-height: 1.2em;
       color: #999;
