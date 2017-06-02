@@ -1879,10 +1879,16 @@ ul {
       margin: 0; } }
 .devices-section {
   position: relative;
+  margin: 0 0 100px 0;
   background-position: center top;
   background-repeat: no-repeat;
-  height: 850px; }
-  .devices-section img {
+  height: 850px;
+  overflow: visible; }
+  .devices-section .ipad-container {
+    max-width: 475px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
     position: absolute;
     top: auto;
     right: 0;
@@ -1890,7 +1896,56 @@ ul {
     left: 0;
     margin: auto;
     z-index: 5; }
-    .devices-section img.ipad {
-      max-width: 475px; }
-    .devices-section img.iphone {
-      max-width: 205px; }
+    .devices-section .ipad-container > div {
+      position: relative;
+      bottom: -100px; }
+    .devices-section .ipad-container .ipad {
+      max-width: 100%;
+      position: relative;
+      z-index: 5; }
+    .devices-section .ipad-container .bg-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      z-index: 5;
+      width: 89%;
+      height: 79%;
+      overflow: hidden;
+      z-index: 1; }
+    .devices-section .ipad-container .bg {
+      position: absolute;
+      top: 160px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      z-index: 5;
+      max-width: 100%;
+      z-index: 1; }
+  .devices-section .iphone {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: -65px;
+    left: 500px;
+    margin: auto;
+    z-index: 5;
+    max-width: 205px; }
+
+@media (max-width: 767px) {
+  .devices-section {
+    height: auto; }
+    .devices-section .ipad-container {
+      width: 60%; }
+      .devices-section .ipad-container > div {
+        bottom: -10vw; }
+    .devices-section .iphone {
+      bottom: -9vw;
+      left: auto;
+      width: 33%;
+      max-width: none; }
+    .devices-section .visible-xs {
+      max-width: 100%; } }

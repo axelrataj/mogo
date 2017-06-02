@@ -1,17 +1,65 @@
 .devices-section {
   position: relative;
+  margin: 0 0 100px 0;
   background: {
     position: center top;
     repeat: no-repeat;
   };
   height: 850px;
-  img {
+  overflow: visible;
+  .ipad-container {
+    max-width: 475px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
     @include positionAbsolute($t: auto);
-    &.ipad {
-      max-width: 475px;
+    > div {
+      position: relative;
+      bottom: -100px;
     }
-    &.iphone {
-      max-width: 205px;
+    .ipad {
+      max-width: 100%;
+      position: relative;
+      z-index: 5;
+    }
+    .bg-container {
+      @include positionAbsolute();
+      width: 89%;
+      height: 79%;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .bg {
+      @include positionAbsolute($t: 160px);
+      max-width: 100%;
+      z-index: 1;
     }
   }
+  .iphone {
+    @include positionAbsolute($t: auto, $b: -65px, $l: 500px);
+    max-width: 205px;
+  }
+}
+
+@media(max-width: 767px) {
+
+  .devices-section {
+    height: auto;
+    .ipad-container {
+      width: 60%;
+      > div {
+        bottom: -10vw;
+      }
+    }
+    .iphone {
+      bottom: -9vw;
+      left: auto;
+      width: 33%;
+      max-width: none;
+    }
+    .visible-xs {
+      max-width: 100%;
+    }
+  }
+
 }
