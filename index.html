@@ -29,20 +29,41 @@
 
             <h1 class="logo">MoGo</h1>
             <div class="nav-main-container">
-                <nav class="nav-main">
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href=""><img src="assets/gfx/header/icons/search.png" alt=""></a></li>
-                    </ul>
-                </nav>
+                <div>
+                    <nav class="nav-main">
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li class="hidden-xs"><a href=""><img src="assets/gfx/header/icons/search.png" alt=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="nav-trigger visible-xs">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
 
         </div>
     </header>
+
+    <script>
+        (function() {
+
+            var navTrigger = $('.nav-trigger');
+
+            navTrigger.on('click', function () {
+
+                $('body').toggleClass('mobile-nav-open');
+
+            });
+
+        })();
+    </script>
 
     <section class="slider-section">
         <img src="assets/gfx/banner-section/banner.jpg" class="img-responsive" alt="">
@@ -471,6 +492,40 @@
                     autoplayTimeout: 3000,
                     navText : ["<i class='arrow left'></i>","<i class='arrow right'></i>"],
                 });
+
+            });
+
+        })();
+
+        (function() {
+
+            var sliderHeight = $('.slider-section').height(),
+                headerHeight = $('.header-main').height(),
+                oldScrollTop = 0;
+
+            $(window).on('scroll', function () {
+
+                var scrollTop = $(this).scrollTop();
+
+                if(scrollTop > headerHeight)
+                    $('body').addClass('header-hidden');
+                else {
+                    $('body').removeClass('header-hidden');
+                }
+
+                if(scrollTop > sliderHeight) {
+
+                    if(oldScrollTop > scrollTop) {
+                        $('body').addClass('nav-scroll');
+                        $('body').removeClass('header-hidden');
+                    }
+
+                }
+                else {
+                    $('body').removeClass('nav-scroll');
+                }
+
+                oldScrollTop = scrollTop;
 
             });
 
