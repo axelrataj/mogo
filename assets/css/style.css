@@ -1756,12 +1756,12 @@ ul {
     bottom: 0;
     z-index: 15;
     opacity: 0;
-    -webkit-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-            transform: translateY(-15px);
     -webkit-transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
             transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
     visibility: hidden;
+    -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+            transform: translateY(-15px);
     background: rgba(255, 255, 255, 0.9); }
     .nav-main-container > div {
       display: table;
