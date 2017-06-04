@@ -2267,3 +2267,28 @@ ul {
       left: auto;
       margin: auto;
       z-index: 5; }
+
+@media (max-width: 991px) {
+  .opinion-section .opinion-slider .item .img-container {
+    width: 120px;
+    height: 120px; }
+    .opinion-section .opinion-slider .item .img-container img {
+      max-width: 50px; }
+  .opinion-section .opinion-slider .item q {
+    font-size: 18px; } }
+@media (max-width: 767px) {
+  .opinion-section .opinion-slider .item {
+    padding: 0 10%; }
+    .opinion-section .opinion-slider .item .img-container {
+      display: none; }
+    .opinion-section .opinion-slider .item q {
+      font-size: 16px;
+      text-align: justify; }
+    .opinion-section .opinion-slider .item .quote-container {
+      width: 100%;
+      padding: 0; }
+    .opinion-section .opinion-slider .item .author {
+      padding: 0 0 0 50px;
+      font-size: 20px; }
+      .opinion-section .opinion-slider .item .author:before {
+        width: 40px; } }
