@@ -2376,6 +2376,7 @@ ul {
 .portfolio-section .inner-container > .col-md-6 div {
   padding: 0; }
 .portfolio-section .inner-container img {
+  width: 100%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
