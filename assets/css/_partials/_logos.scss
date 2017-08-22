@@ -1,0 +1,33 @@
+.logos-section {
+  background: #f8f8f8;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      width: 16.6667%;
+      padding: 0 15px;
+      img {
+        margin: auto;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 991px) {
+
+  .logos-section {
+    ul {
+      flex-wrap: wrap;
+      li {
+        width: 33.3333%;
+        padding: 15px;
+      }
+    }
+  }
+
+}
+
+@media(max-width: 767px) {
+
+}

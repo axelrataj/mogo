@@ -1,73 +1,5 @@
 .about-section {
   padding: 90px 0 0 0;
-  .box {
-    cursor: pointer;
-    position: relative;
-    .eye {
-      transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
-      @include positionAbsolute(5px, 5px, auto, auto);
-      max-width: 25px;
-    }
-    &:after {
-      @include positionAbsolute();
-      content: '';
-      background: #95e1d3;
-      z-index: -1;
-      transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
-      opacity: 0;
-    }
-    .hover {
-      @include positionAbsolute();
-      text-align: center;
-      .bg {
-        @include positionAbsolute();
-        @include generateGradient(#f38181, #fce38a, top, bottom);
-        opacity: 0;
-        z-index: -1;
-        transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
-        /*transform: translateX(-15px) translateY(-15px);*/
-      }
-      .display-table {
-        img {
-          opacity: 0;
-          transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
-          transform: translateY(-15px);
-        }
-      }
-      p {
-        margin: 10px 0 0 0;
-        color: #fff;
-        text-transform: uppercase;
-        font: {
-          size: 18px;
-          weight: 700;
-        };
-        opacity: 0;
-        transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
-        transform: translateY(15px);
-      }
-    }
-    &:hover {
-      .eye {
-        opacity: 0;
-      }
-      &:after {
-        transform: translateX(15px) translateY(15px);
-        opacity: 1;
-      }
-      .hover {
-        text-align: center;
-        .bg {
-          opacity: 0.9;
-          /*transform: translateX(0) translateY(0);*/
-        }
-        p, .display-table img {
-          opacity: 1;
-          transform: translateY(0px);
-        }
-      }
-    }
-  }
   .counters {
     margin: 90px 0 0 0;
     background: #95e1d3;
@@ -111,15 +43,6 @@
 @media(max-width: 991px) {
 
   .about-section {
-    .box {
-      .hover {
-        p {
-          font: {
-            size: 16px;
-          };
-        }
-      }
-    }
     .counters {
       ul {
         strong {
@@ -137,15 +60,6 @@
 
   .about-section {
     padding: 50px 0;
-    .box {
-      max-width: 380px;
-      margin: auto;
-      &:hover {
-        &:after {
-          transform: translateX(5px) translateY(5px);
-        }
-      }
-    }
     .row {
       .col-sm-4 {
         margin: 0 0 15px 0;

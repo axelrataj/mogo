@@ -1,0 +1,29 @@
+.portfolio-section {
+  .inner-container {
+    > .col-md-6 {
+      div {
+        padding: 0;
+      }
+    }
+    img {
+      background: {
+        size: contain;
+        position: center;
+        repeat: no-repeat;
+      };
+    }
+  }
+}
+
+
+@media(max-width: 991px) {
+
+  .portfolio-section {
+
+  }
+
+}
+
+@media(max-width: 767px) {
+
+}

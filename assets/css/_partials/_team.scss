@@ -1,0 +1,66 @@
+.team-section {
+  .who {
+    text-align: center;
+    margin: 30px 0 0 0;
+    strong {
+      text-transform: uppercase;
+      display: block;
+      color: #333;
+      font: {
+        family: $montserrat;
+        size: 14px;
+      };
+    }
+    span {
+      margin: 5px 0 0 0;
+      display: block;
+      color: #999;
+      font: {
+        family: $roboto;
+        weight: 300;
+        style: italic;
+      };
+    }
+  }
+  .social {
+    max-width: 224px;
+    margin: auto;
+    transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+    transform: translateY(15px);
+    opacity: 0;
+    a {
+      display: inline-block;
+      float: left;
+      width: 56px;
+      height: 56px;
+      color: #fff;
+      text-decoration: none;
+      background: #fce38a;
+      transition: inherit;
+      i {
+        color: #f38181;
+        display: block;
+        text-align: center;
+        line-height: 56px;
+        transition: inherit;
+        font: {
+          size: 26px;
+        };
+      }
+      &:hover {
+        background: #f38181;
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .hover-box {
+    &:hover {
+      .social {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}
