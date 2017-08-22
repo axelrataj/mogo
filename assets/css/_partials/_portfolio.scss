@@ -5,13 +5,35 @@
         padding: 0;
       }
     }
-    img {
+    img:not(.more) {
       width: 100%;
       background: {
         size: contain;
         position: center;
         repeat: no-repeat;
       };
+    }
+  }
+  .hover-box {
+    &:after {
+      display: none;
+    }
+    p {
+      text-transform: uppercase;
+      font: {
+        weight: 400;
+      };
+      span {
+        text-transform: none;
+        display: block;
+        margin: 5px auto 0;
+        font: {
+          size: 15px;
+          style: italic;
+          family: $roboto;
+          weight: 300;
+        };
+      }
     }
   }
 }

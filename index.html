@@ -39,8 +39,10 @@
                             <li><a href="">Work</a></li>
                             <li><a href="">Blog</a></li>
                             <li><a href="">Contact</a></li>
-                            <li class="hidden-xs"><a href=""><img src="assets/gfx/header/icons/search.png" alt=""></a></li>
+                            <li class="hidden-xs"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            <li class="hidden-xs"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
                         </ul>
+                        <div class="strip"></div>
                     </nav>
                 </div>
             </div>
@@ -63,6 +65,46 @@
                 $('body').toggleClass('mobile-nav-open');
 
             });
+
+        })();
+
+        (function() {
+
+            var navContainer = document.querySelector('.nav-main'),
+                liLength = navContainer.querySelectorAll('li').length,
+                strip = document.querySelector('.nav-main-container nav .strip');
+
+            navContainer.addEventListener('mousemove', function(e) {
+
+                if( !strip.classList.contains('active') ) {
+
+                    strip.classList.add('active');
+                    return false;
+
+                }
+
+                var width = e.target.clientWidth,
+                    left = e.layerX,
+                    marginLeft = -(width / 2) + 'px';
+
+                if( e.target.localName === 'a' ) {
+
+                    strip.style.width = width + 'px';
+                    //strip.style.left = -(width / 2) + 'px';
+                    marginLeft = 0;
+
+                    for(var i = 0; i < liLength; i++)
+                        document.querySelectorAll('.nav-main-container nav ul li')[i].classList.remove('active');
+
+                    e.target.parentNode.classList.add('active');
+
+                    left = e.target.offsetLeft;
+
+                }
+
+                strip.style.transform = 'translateX('+ left + 'px)';
+                //strip.style.left = marginLeft;
+            }, false);
 
         })();
     </script>
@@ -675,35 +717,255 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-1.jpg')" alt="" class="img-responsive">
+                        <div class="hover-box" onclick>
+                            <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-1.jpg')" alt="" class="img-responsive">
+                            <div class="hover">
+                                <div class="bg"></div>
+                                <div class="display-table">
+                                    <div class="display-table-cell">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <p>
+                                            creatively designed
+                                            <span>Lorem ipsum dolor sit</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/gfx/about/icons/plus.png" alt="" class="more visible-xs">
+                        </div>
                     </div>
                     <div class="col-sm-6">
-                        <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-2.jpg')" alt="" class="img-responsive">
+                        <div class="hover-box" onclick>
+                            <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-2.jpg')" alt="" class="img-responsive">
+                            <div class="hover">
+                                <div class="bg"></div>
+                                <div class="display-table">
+                                    <div class="display-table-cell">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <p>
+                                            creatively designed
+                                            <span>Lorem ipsum dolor sit</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/gfx/about/icons/plus.png" alt="" class="more visible-xs">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-3.jpg')" alt="" class="img-responsive">
+                        <div class="hover-box" onclick>
+                            <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-3.jpg')" alt="" class="img-responsive">
+                            <div class="hover">
+                                <div class="bg"></div>
+                                <div class="display-table">
+                                    <div class="display-table-cell">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <p>
+                                            creatively designed
+                                            <span>Lorem ipsum dolor sit</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/gfx/about/icons/plus.png" alt="" class="more visible-xs">
+                        </div>
                     </div>
                     <div class="col-sm-6">
-                        <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-4.jpg')" alt="" class="img-responsive">
+                        <div class="hover-box" onclick>
+                            <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-4.jpg')" alt="" class="img-responsive">
+                            <div class="hover">
+                                <div class="bg"></div>
+                                <div class="display-table">
+                                    <div class="display-table-cell">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <p>
+                                            creatively designed
+                                            <span>Lorem ipsum dolor sit</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/gfx/about/icons/plus.png" alt="" class="more visible-xs">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="assets/gfx/portfolio-section/img-shape-2.png" style="background-image: url('assets/gfx/portfolio-section/img-5.jpg')" alt="" class="img-responsive">
+                        <div class="hover-box" onclick>
+                            <img src="assets/gfx/portfolio-section/img-shape-2.png" style="background-image: url('assets/gfx/portfolio-section/img-5.jpg')" alt="" class="img-responsive">
+                            <div class="hover">
+                                <div class="bg"></div>
+                                <div class="display-table">
+                                    <div class="display-table-cell">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <p>
+                                            creatively designed
+                                            <span>Lorem ipsum dolor sit</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/gfx/about/icons/plus.png" alt="" class="more visible-xs">
+                        </div>
                     </div>
                     <div class="col-sm-6">
-                        <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-6.jpg')" alt="" class="img-responsive">
-                        <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-7.jpg')" alt="" class="img-responsive">
+
+                        <div class="hover-box" onclick>
+                            <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-6.jpg')" alt="" class="img-responsive">
+                            <div class="hover">
+                                <div class="bg"></div>
+                                <div class="display-table">
+                                    <div class="display-table-cell">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <p>
+                                            creatively designed
+                                            <span>Lorem ipsum dolor sit</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/gfx/about/icons/plus.png" alt="" class="more visible-xs">
+                        </div>
+
+                        <div class="hover-box" onclick>
+                            <img src="assets/gfx/portfolio-section/img-shape-1.png" style="background-image: url('assets/gfx/portfolio-section/img-7.jpg')" alt="" class="img-responsive">
+                            <div class="hover">
+                                <div class="bg"></div>
+                                <div class="display-table">
+                                    <div class="display-table-cell">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <p>
+                                            creatively designed
+                                            <span>Lorem ipsum dolor sit</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/gfx/about/icons/plus.png" alt="" class="more visible-xs">
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
+
+    <section class="opinion-section-2 section">
+        <div class="container">
+
+            <div class="opinion-slider-2 owl-carousel">
+                <div class="item">
+                    <div class="img-container">
+                        <img src="assets/gfx/opinion-section/jon.png" alt="">
+                    </div>
+                    <div class="quote-container">
+                        <q>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </q>
+                        <div class="author">Jon Doe</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="assets/gfx/opinion-section/jon.png" alt="">
+                    </div>
+                    <div class="quote-container">
+                        <q>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </q>
+                        <div class="author">Jon Doe</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="assets/gfx/opinion-section/jon.png" alt="">
+                    </div>
+                    <div class="quote-container">
+                        <q>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </q>
+                        <div class="author">Jon Doe</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="assets/gfx/opinion-section/jon.png" alt="">
+                    </div>
+                    <div class="quote-container">
+                        <q>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </q>
+                        <div class="author">Jon Doe</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        (function() {
+
+            $(document).ready(function () {
+
+                $('.opinion-slider-2').owlCarousel({
+                    items: 1,
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    //animateOut: 'fadeOut',
+                    navText : ["<i class='arrow left'></i>","<i class='arrow right'></i>"]
+                });
+
+            });
+
+        })();
+
+        (function() {
+
+            var sliderHeight = $('.slider-section').height(),
+                headerHeight = $('.header-main').height(),
+                oldScrollTop = 0;
+
+            $(window).on('scroll', function () {
+
+                var scrollTop = $(this).scrollTop();
+
+                if(scrollTop > headerHeight)
+                    $('body').addClass('header-hidden');
+                else {
+                    $('body').removeClass('header-hidden');
+                }
+
+                if(scrollTop > sliderHeight) {
+
+                    if(oldScrollTop > scrollTop) {
+                        $('body').addClass('nav-scroll');
+                        $('body').removeClass('header-hidden');
+                    }
+
+                }
+                else {
+                    $('body').removeClass('nav-scroll');
+                }
+
+                oldScrollTop = scrollTop;
+
+            });
+
+        })();
+    </script>
 
 </body>
 </html>
