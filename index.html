@@ -30,20 +30,31 @@
         <div class="container clearfix">
 
             <h1 class="logo">MoGo</h1>
-            <div class="nav-main-container">
-                <div>
-                    <nav class="nav-main">
-                        <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Work</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li class="hidden-xs"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                            <li class="hidden-xs"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        </ul>
-                        <div class="strip"></div>
-                    </nav>
+            <div class="right-container">
+                <div class="nav-main-container">
+                    <div>
+                        <nav class="nav-main">
+                            <ul>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Work</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="" class="last">Contact</a></li>
+                                <li class="hidden-xs"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                <li class="hidden-xs"><a href="" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <div class="strip"></div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <form action="" method="post">
+                        <label for="search">
+                            <input type="search" id="search" name="search">
+                        </label>
+                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
                 </div>
             </div>
             <div class="nav-trigger visible-xs">
@@ -56,6 +67,31 @@
     </header>
 
     <script>
+        (function() {
+
+            var searchBtn = document.querySelector('.search-btn'),
+                header = document.querySelector('.header-main'),
+                searchContainerBtn = document.querySelector('.search-container > i');
+
+
+            searchBtn.addEventListener('click', function(e) {
+
+                e.preventDefault();
+
+               if( !header.classList.contains('search-form-active') )
+                   header.classList.add('search-form-active');
+
+            }, false);
+
+            searchContainerBtn.addEventListener('click', function() {
+
+                if( header.classList.contains('search-form-active') )
+                    header.classList.remove('search-form-active');
+
+            }, false);
+
+        })();
+
         (function() {
 
             var navTrigger = $('.nav-trigger');
@@ -76,34 +112,32 @@
 
             navContainer.addEventListener('mousemove', function(e) {
 
-                if( !strip.classList.contains('active') ) {
+                if( !strip.classList.contains('hover') ) {
 
-                    strip.classList.add('active');
+                    strip.classList.add('hover');
                     return false;
 
                 }
 
                 var width = e.target.clientWidth,
-                    left = e.layerX,
-                    marginLeft = -(width / 2) + 'px';
+                    left = e.layerX;
 
                 if( e.target.localName === 'a' ) {
 
                     strip.style.width = width + 'px';
-                    //strip.style.left = -(width / 2) + 'px';
-                    marginLeft = 0;
+                    strip.style.left = 0;
 
                     for(var i = 0; i < liLength; i++)
-                        document.querySelectorAll('.nav-main-container nav ul li')[i].classList.remove('active');
+                        document.querySelectorAll('.nav-main-container nav ul li')[i].classList.remove('hover');
 
-                    e.target.parentNode.classList.add('active');
+                    e.target.parentNode.classList.add('hover');
 
                     left = e.target.offsetLeft;
 
+                    strip.style.transform = 'translateX('+ left + 'px)';
+
                 }
 
-                strip.style.transform = 'translateX('+ left + 'px)';
-                //strip.style.left = marginLeft;
             }, false);
 
         })();
